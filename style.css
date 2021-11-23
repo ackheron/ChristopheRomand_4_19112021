@@ -821,7 +821,7 @@ h4 {
 }
 
 .bg-banniere {
-  background-image: url("img/la-chouette-agence-banniere.webp");
+  background-image: url("img/la-chouette-agence-banniere-MOD.webp"); /* Reduction de la résolution de la bannière */
 }
 
 .bg-presentation {
@@ -889,6 +889,9 @@ h4 {
     padding: 0 20px;
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
+  }
+  .bg-presentation {
+    background-image: url("img/image-de-presentation-MOD.webp"); /* Changement de la taille de l'image en dessous de 991px */
   }
 }
 
