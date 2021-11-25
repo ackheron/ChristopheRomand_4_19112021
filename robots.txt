@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+sitemap: https://github.com/ackheron/ChristopheRomand_4_19112021/sitemap.xml
