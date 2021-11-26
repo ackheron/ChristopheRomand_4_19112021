@@ -276,27 +276,36 @@
             <div class="container bloc-lg">
                 <div class="row">
                     <form action="#" class="contact">
-                        <h2 class="contact-title">Contactez notre équipe</h2>
+                        <div class="contact-title">
+                            <h2>Parlons web design ! </h2>
+                            <p>Nous sommes ravis que vous souhaitiez collaborer avec notre
+                                agence.
+                                Parlez-nous de votre projet en complétant le formulaire ci-dessous. </p>
+                        </div>
                         <div class="form-grid">
                             <div>
                                 <label for="name" class="grey">Nom</label>
-                                <input type="text" id="name" />
+                                <input type="text" id="name" required
+                                    placeholder="Veuillez indiquer votre nom de famille" />
                             </div>
                             <div>
                                 <label for="firstname" class="grey">Prénom</label>
-                                <input type="text" id="firstname" />
+                                <input type="text" id="firstname" required
+                                    placeholder="Veuillez indiquer votre prénom" />
                             </div>
                             <div>
                                 <label for="mail" class="grey">Adresse email</label>
-                                <input type="email" name="mail" id="mail" />
+                                <input type="email" name="mail" id="mail" required placeholder="example@mail.com" />
                             </div>
                             <div>
                                 <label for="question" class="grey">Comment nous avez-vous connu ?</label>
-                                <input type="text" id="question" />
+                                <input type="text" id="question" required
+                                    placeholder="Moteur de recherche, presse, bouche à oreille..." />
                             </div>
                             <div class="textarea">
                                 <label for="message" class="grey">Brief de votre projet</label>
-                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" required
+                                    placeholder="Ajoutez autant de details que nécessaire"></textarea>
                             </div>
 
                         </div>

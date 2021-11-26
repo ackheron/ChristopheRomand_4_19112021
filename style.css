@@ -15,8 +15,18 @@ strong {
   text-align: center;
   font-size: 3rem;
   background-color: rgba(0, 0, 0, 0.6);
-  color: white !important;
   margin: 40px auto;
+  width: 85%;
+}
+.contact-title h2 {
+  font-size: 3rem;
+  color: white !important;
+}
+.contact-title p {
+  /* text-align: center; */
+  font-size: 1.7rem;
+  color: white !important;
+  margin: auto;
   width: 85%;
 }
 
@@ -65,8 +75,9 @@ textarea {
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
-textarea:focus {
-  border: 1px solid #333333;
+textarea:focus,
+a[data-lightbox]:focus img {
+  border: 3px solid #3059e0;
 }
 @media (max-width: 767px) {
   .form-grid {
@@ -90,7 +101,19 @@ button {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+}
+
+/*----------  focus sur les liens du footer  ----------*/
+
+footer a {
+  display: inline-block;
+  height: 40px !important;
+  width: 40px !important;
+  padding-top: 5px;
+}
+footer a:focus {
+  border: 3px solid #3059e0;
 }
 
 #page-loading-blocs-notifaction {
@@ -410,7 +433,9 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-  background: transparent;
+  background-color: #f3976c;
+  border-radius: 10px;
+  color: #242121 !important;
 }
 
 .navbar-toggle {
@@ -555,6 +580,9 @@ button {
 .icon-md {
   font-size: 30px !important;
   margin-bottom: 20px;
+}
+.icon-md:focus {
+  border: solid 2px red !important;
 }
 
 .icon-lg {
@@ -763,9 +791,16 @@ p {
 /*----------  taille texte citation  ----------*/
 blockquote p {
   font-size: 2rem;
+  font-weight: bold;
   font-style: italic;
 }
 
+blockquote p strong {
+  font-weight: bold;
+}
+figure figcaption {
+  color: black;
+}
 .tight-width-whitespace {
   max-width: 900px;
   margin: auto auto auto auto;
@@ -796,7 +831,6 @@ blockquote p {
 .social .text-center:hover {
   transform: scale(1.3);
 }
-
 h2 {
   font-size: 22px;
   line-height: 1.4em;
@@ -880,9 +914,11 @@ h4 {
   color: #242121 !important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
   background: #c27956 !important;
   color: #242121 !important;
+  border: 3px solid #3059e0;
 }
 
 .ltc-white {
