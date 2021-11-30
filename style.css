@@ -64,7 +64,7 @@ input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  margin: 5px 0 40px;
+  margin: 5px 0 5px;
   outline: none;
   border-radius: 5px;
   color: black;
@@ -72,6 +72,7 @@ textarea {
 }
 textarea {
   resize: none;
+  margin-bottom: 20px;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -114,6 +115,12 @@ footer a {
 }
 footer a:focus {
   border: 3px solid #3059e0;
+}
+
+/*----------  Dimension bloc contact  ----------*/
+
+div .bloc-contact {
+  padding: 15px 50px;
 }
 
 #page-loading-blocs-notifaction {
@@ -188,10 +195,10 @@ footer a:focus {
   right: 0;
 }
 
-.texture-paper::before {
+/* .texture-paper::before {
   background: url("img/texture-paper.webp");
   background-size: 280px 280px;
-}
+} */
 
 .b-parallax {
   background-attachment: fixed;
@@ -371,6 +378,8 @@ footer a:focus {
 }
 
 .row-no-gutters {
+  display: flex;
+  justify-content: space-evenly;
   margin-right: 0;
   margin-left: 0;
 }
@@ -383,7 +392,6 @@ footer a:focus {
 
 #bloc-1-hero h1 {
   font-size: 32px;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar {
@@ -885,6 +893,10 @@ h4 {
 
 .black-background {
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 40px 40px 40px;
+}
+.black-background-header {
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 40px 40px 40px 40px;
 }
 
